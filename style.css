@@ -1,0 +1,185 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.bg_image1 {
+    background-image: url("./img/sergey-zolkin-192937-blurredV2.jpg");
+    height: 89%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 100%;
+    margin: auto auto;
+}
+
+.enso {
+    display: inline-block;
+    height: 5.98%;
+    width: auto; 
+    /* margin: 2.3% 0% 0% 2.1%; */
+    margin: 33px 0 0px 30px;
+    position: absolute;
+}
+
+.name {
+    display: inline-block;
+    color: white;
+    position: relative;
+    margin: 3.5% 0% 0% 9%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.subtitle {
+    display: inline-block;
+    color: white;
+    margin-left: 10.7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.nav_home {
+    height: 90px;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -50px;
+    border-bottom: 4px solid #f61f70;
+}
+
+.nav_projects {
+    height: 90px;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -50px;
+}
+
+.nav_contact {
+    height: 90px;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-left: 570px;
+    margin-top: -50px;
+}
+
+.nav_btn {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 80px;
+}
+
+.title {
+    color: white;
+    margin: 150px 0px 0px -225px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: absolute;
+}
+
+.summary {
+    color: white;
+    margin: 260px 0px 0px -223px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    position: absolute;
+}
+
+.contact_here {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+    padding-bottom: 3px;
+}
+
+.projects {
+    height: 1000px;
+    background-color: white;
+}
+
+.content_wrapper {
+    width: 100%;
+    height: 200%;
+    margin: auto auto;
+}
+
+.email_btn {
+    height: 50px;
+    width: 150px;
+    background-color: #f61f70;
+    margin: 1% 0px 0px 89%;
+    border-radius: 25px;
+    position: fixed;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.hover_shadow {
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.email_btn_icon {
+    height: 65%;
+    margin: 8px 0px 0px 12px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.email_btn_txt {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 16px 0px 0px 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dynamic_nav {
+    height: 65px;
+    width: 100%;
+    background-color: aqua;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.bg_image2 {
+    background-image: url("./img/zany-jadraque-571205-unsplash.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

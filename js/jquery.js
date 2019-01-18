@@ -1,30 +1,12 @@
 $(Document).ready(function(){
 
     // Main Navigation Hover Effect
-    $('.nav_home').hover(
+    $('.nav_home, .nav_projects, .nav_contact').hover(
         function(){
-            $('.nav_home').children().css('color', '#f61f70')
+            $(this).children().animate({color : '#f61f70'}, 200)
         },
         function(){
-            $('.nav_home').children().css('color', 'white')
-        }
-    );
-
-    $('.nav_projects').hover(
-        function(){
-            $('.nav_projects').children().css('color', '#f61f70')
-        },
-        function(){
-            $('.nav_projects').children().css('color', 'white')
-        }
-    );
-
-    $('.nav_contact').hover(
-        function(){
-            $('.nav_contact').children().css('color', '#f61f70')
-        },
-        function(){
-            $('.nav_contact').children().css('color', 'white')
+            $(this).children().animate({color : 'white'}, 200)
         }
     );
     
@@ -58,6 +40,16 @@ $(Document).ready(function(){
         }
     });
 
+    // Dynamic Nav Hover Effect
+    $('#dynamic_nav_home, #dynamic_nav_projects, #dynamic_nav_contact').hover(
+        function(){
+            $(this).children().animate({color : '#f61f70'}, 200)
+        },
+        function(){
+            $(this).children().animate({color : 'rgb(41, 41, 41)'}, 200)
+        }
+    );
+
     // Scroll Navigation Animations
     $('.nav_home, #dynamic_nav_home').click(function(){
         $('html, body').animate({
@@ -70,4 +62,11 @@ $(Document).ready(function(){
             scrollTop: $('.projects').offset().top
         }, 1000)
     });
+
+    $('.nav_contact, #dynamic_nav_contact').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.bg_image2').offset().top
+        }, 1000)
+    });
+
 })

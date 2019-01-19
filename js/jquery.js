@@ -40,8 +40,8 @@ $(Document).ready(function(){
         }
     });
 
-    // Dynamic Nav Hover Effect
-    $('#dynamic_nav_home, #dynamic_nav_projects, #dynamic_nav_contact').hover(
+    // Dynamic Nav + Project_Link Hover Effect
+    $('#dynamic_nav_home, #dynamic_nav_projects, #dynamic_nav_contact, .project_link').hover(
         function(){
             $(this).children().animate({color : '#f61f70'}, 200)
         },

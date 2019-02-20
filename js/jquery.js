@@ -33,7 +33,10 @@ $(Document).ready(function(){
     var topOfDiv = $('.projects').offset().top;
     $(window).scroll(function(){
         if($(window).scrollTop() > topOfDiv){
-            $('.dynamic_nav').fadeIn('slow','linear')
+            $('.dynamic_nav').fadeIn('slow','linear');
+            // Reset and Add Active Class for Projects Section Nav
+            $('.active').removeClass('active');
+            $('#dynamic_nav_projects').addClass('active');
         }
         else {
             $('.dynamic_nav').hide()
@@ -50,23 +53,37 @@ $(Document).ready(function(){
         }
     );
 
+    $('.repo_link').hover(
+        function(){
+            $(this).animate({fontSize : '13px'}, 200)
+            $(this).addClass('shadow')
+        },
+        function(){
+            $(this).animate({fontSize : '12px'}, 100)
+            $(this).removeClass('shadow')
+        }
+    );
+
     // Scroll Navigation Animations
     $('.nav_home, #dynamic_nav_home').click(function(){
-        $('html, body').animate({
-            scrollTop: $('.bg_image1').offset().top
-        }, 1000)
+        $('html, body').animate({scrollTop: $('.bg_image1').offset().top}, 1000)
     });
 
     $('.nav_projects, #dynamic_nav_projects').click(function(){
-        $('html, body').animate({
-            scrollTop: $('.projects').offset().top
-        }, 1000)
+        $('html, body').animate({scrollTop: $('.projects').offset().top}, 1000)
     });
 
     $('.nav_contact, #dynamic_nav_contact').click(function(){
-        $('html, body').animate({
-            scrollTop: $('.bg_image2').offset().top
-        }, 1000)
+        $('html, body').animate({scrollTop: $('.bg_image2').offset().top}, 1000)
     });
+
+    // Reset and Add Active Class for Contact Section Nav
+    var top = $('.bg_image2').offset().top;
+    $(window).scroll(function(){
+        if($(window).scrollTop() > top - 60){
+            $('.active').removeClass('active');
+            $('#dynamic_nav_contact').addClass('active');
+        }
+    })
 
 })

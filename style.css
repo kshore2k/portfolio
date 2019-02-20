@@ -249,7 +249,7 @@ body, html {
     margin-top: 20px; 
 }
 
-#dynamic_nav_projects {
+.active {
     border-bottom: 4px solid #f61f70;
 }
 
@@ -295,7 +295,29 @@ body, html {
     font-weight: lighter;
     font-size: 14px;
     letter-spacing: 1px;
-    margin-top: 10%;
+    margin: 10% 0 10% 0;
+}
+
+.repo_link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #f61f70;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.shadow {
+    -moz-transition: box-shadow 400ms;
+    -o-transition: box-shadow 400ms;
+    -webkit-transition: box-shadow 400ms;
+    transition: box-shadow 400ms;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.295);
+    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.295);
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.295);
 }
 
 .border_shadow {

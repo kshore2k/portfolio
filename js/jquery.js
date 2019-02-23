@@ -11,7 +11,7 @@ $(Document).ready(function(){
     );
     
     // Summary Contact Hover Effect
-    $('.contact_here').hover(
+    $('#contact_here').hover(
         function(){
             $(this).animate({color :'#f61f70'}, 500)
         },
@@ -70,10 +70,10 @@ $(Document).ready(function(){
     });
 
     $('.nav_projects, #dynamic_nav_projects').click(function(){
-        $('html, body').animate({scrollTop: $('.projects').offset().top}, 1000)
+        $('html, body').animate({scrollTop: $('.projects').offset().top + 1}, 1000)
     });
 
-    $('.nav_contact, #dynamic_nav_contact').click(function(){
+    $('.nav_contact, #dynamic_nav_contact, #contact_here').click(function(){
         $('html, body').animate({scrollTop: $('.bg_image2').offset().top}, 1000)
     });
 

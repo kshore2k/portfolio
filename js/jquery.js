@@ -74,7 +74,8 @@ $(Document).ready(function(){
     });
 
     $('.nav_contact, #dynamic_nav_contact, #contact_here').click(function(){
-        $('html, body').animate({scrollTop: $('.bg_image2').offset().top}, 1000)
+        $('html, body').animate({scrollTop: $('.bg_image2').offset().top}, 1000);
+        $('#name').focus();
     });
 
     // Reset and Add Active Class for Contact Section Nav
@@ -85,5 +86,15 @@ $(Document).ready(function(){
             $('#dynamic_nav_contact').addClass('active');
         }
     })
+
+    // Send Button Effect
+    $('#send_btn').hover(
+        function(){
+            $(this).animate({backgroundColor: '#f61f70',color: 'white'},100);
+        },
+        function(){
+            $(this).animate({backgroundColor: 'transparent',color: '#f61f70'},100);
+        }
+    );
 
 })

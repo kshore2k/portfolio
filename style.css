@@ -118,7 +118,7 @@ body, html {
 
 .title {
     color: white;
-    margin: 200px 0px 0px -240px;
+    margin: 14% 0px 0px -240px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: 60px;
@@ -129,13 +129,14 @@ body, html {
 
 .summary {
     color: white;
-    margin: 310px 0px 0px -238px;
+    /* margin: 22% 0px 0px -238px; */
+    margin: 40px 0 0 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     font-size: 16px;
     letter-spacing: 1px;
-    display: inline-block;
-    position: absolute;
+    /* display: inline-block; */
+    /* position: absolute; */
 }
 
 #contact_here {
@@ -159,6 +160,7 @@ body, html {
     margin: 1% 0px 0px 89%;
     border-radius: 25px;
     position: fixed;
+    z-index: 999;
     -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
@@ -422,9 +424,105 @@ body, html {
 
 .bg_image2 {
     background-image: url("./img/zany-jadraque-571205-unsplash.jpg");
-    height: 100%;
+    height: 94%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#foot_wrapper {
+    width: 100%;
+    height: 94%;
+    margin: 0;
+    /* background-color: cornflowerblue; */
+    position: absolute;
+    text-align: center;
+}
+
+#social, #contact_wrapper {
+    width: 10%;
+    height: 55%;
+    /* background-color: coral; */
+    display: inline-block;
+    margin-top: 8%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#social > #headshot {
+    height: 30%;
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: table;
+    margin-bottom: 20px;
+}
+
+#social > a > .social_link {
+    height: 25px;
+    width: auto;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#contact_wrapper {
+    width: 40%;
+}
+
+#contact_wrapper > .contact_info, #contact_content {
+    width: 25%;
+    height: 12%;
+    margin: 10% 2% 4% 2%;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: none;
+}
+
+#contact_content {
+    width: 90%;
+    margin-top: 0;
+    height: 35%;
+    padding-top: 10px;
+    resize: none;
+}
+
+#contact_wrapper > .contact_info:focus, #contact_content:focus {
+    outline: none;
+    border: 1px solid rgb(113, 228, 243) !important;
+    box-shadow: 0 0 6px rgb(113, 228, 243) !important;
+    -moz-box-shadow: 0 0 6px rgb(113, 228, 243) !important;
+    -webkit-box-shadow: 0 0 6px rgb(113, 228, 243) !important;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#footer > p, #footer > a {
+    color: rgb(134, 134, 134);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 100px;
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+#footer > a {
+    -webkit-transition: all 0.2s ease; 
+}
+
+#footer > a:hover {
+    color: #f61f70;
 }

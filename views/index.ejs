@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="icon" type="image/gif/png" href="./img/enso.png"> -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,7 +34,7 @@
 </head>
 <body>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
 
     <div class="bg_image1">
 
@@ -190,15 +189,15 @@
                 <a href="mailto:kshore2k18@gmail.com"><img class="social_link" src="./img/mail_pink.png" alt="email"></a>
             </div>
 
-            <div id="contact_wrapper">
-                <input id="name" class="contact_info" type="text" placeholder="Name">
-                <input class="contact_info" type="text" placeholder="Email">
-                <input class="contact_info" type="text" placeholder="Phone">
+            <form id="contact_form" action="/contact" method="POST">
+                <input id="name" class="contact_info" type="text" placeholder="Name" name="name" autocomplete="off" required>
+                <input class="contact_info" type="email" placeholder="Email" name="email" autocomplete="off" required>
+                <input class="contact_info" type="text" placeholder="Phone" name="phone" autocomplete="off" required>
 
-                <textarea id="contact_content" type="text" placeholder="Message"></textarea>
+                <textarea id="contact_content" type="text" placeholder="Message" name="content" autocomplete="off" required></textarea>
 
                 <button id="send_btn">SEND</button>
-            </div>
+            </form>
 
             <div id="footer">
                 <p>©KSHORE 2019</p>

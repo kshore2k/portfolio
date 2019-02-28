@@ -533,6 +533,13 @@ body, html {
     cursor: hand;
 }
 
+#svg {
+    height: 50px;
+    width: auto;
+    float: right;
+    margin-right: 20px;
+}
+
 #send_btn:focus {
     outline: none;
 }

@@ -92,25 +92,28 @@ $(Document).ready(function(){
     })
 
     // Send Button Effect
-    $('#send_btn').hover(
-        function(){
-            $(this).animate({backgroundColor: '#f61f70',color: 'white'},100);
-        },
-        function(){
-            $(this).animate({backgroundColor: 'transparent',color: '#f61f70'},100);
-        }
-    );
+    $('#contact_form').on('mouseenter', 'button', function(){
+        $(this).animate({backgroundColor: '#f61f70',color: 'white'},100);
+    });
 
-    // Send Form w/out Refresh
+    $('#contact_form').on('mouseleave', '#send_btn', function(){
+        $(this).animate({backgroundColor: 'transparent',color: '#f61f70'},100);
+    });
+
+    // Send Form w/out Refresh & Show Loading SVG
     var frm = $('#contact_form');
     frm.submit(function (ev) {
+        $('#send_btn').replaceWith("<img id='svg' src='../img/svg_icon.svg'/>")
         $.ajax({
             type: frm.attr('method'),
             url: frm.attr('action'),
             data: frm.serialize(),
             success: function (data) {
-                alert("Message Sent! I'll get back to you ASAP :)");
-                $('#contact_form').trigger('reset');
+                setTimeout(function(){
+                    alert("Message Sent! I'll get back to you ASAP :)");
+                    $('#contact_form').trigger('reset');
+                    $('#svg').replaceWith("<button id='send_btn'>SEND</button>")
+                }, 2000);
             }
         });
 

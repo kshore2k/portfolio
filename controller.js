@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const config = require('./config.json');
 
 module.exports = {
     index: (req,res) => {
@@ -9,13 +10,13 @@ module.exports = {
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'myportfolio.kshore@gmail.com', // *Admin Email
-                pass: '' // *Admin Pass
+                user: config.email, // *Admin Email
+                pass: config.password // *Admin Pass
             }
         });
         
         var mailOptions = {
-            from: 'myportfolio.kshore@gmail.com', // *Admin Email
+            from: config.email, // *Admin Email
             to: 'kshore2k18@gmail.com',
             subject: 'Portfolio Message',
             html: 'From: '+req.body.name+

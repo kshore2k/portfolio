@@ -139,6 +139,40 @@ body, html {
     /* position: absolute; */
 }
 
+#hire_btn {
+    width: 240px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.144);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 20%;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 2px;
+    -webkit-transition: 0.2s;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#hire_btn:hover {
+    background-color: #f61f70;
+}
+
+#hire_btn:focus {
+    outline: none;
+}
+
+#hire_btn > img {
+    width: auto;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
 #contact_here {
     color: white;
     text-decoration: none;
@@ -460,12 +494,41 @@ body, html {
     margin-bottom: 20px;
 }
 
+#social_contact > button {
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    background-color: #f61f70;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .75px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-transition: 0.1s;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#social_contact > button:hover {
+    color: white;
+}
+
+#social_contact > button:focus {
+    outline: none;
+}
+
 #social > a > .social_link {
     height: 25px;
     width: auto;
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
+    margin-top: 5px;
 }
 
 #contact_form {

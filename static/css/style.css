@@ -635,3 +635,142 @@ body, html {
 #footer > a:hover {
     color: #f61f70;
 }
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bg_image1 {
+        height: 70%;
+    }
+
+    #header {
+        float: left;
+    }
+
+    .nav_home, .nav_projects, .nav_contact {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-left: 0;
+        position: initial;
+    }
+
+    .summary {
+        padding: 0 10px 0 10px;
+    }
+
+    .summary > br {
+        display: none;
+    }
+
+    #hire_btn {
+        margin-top: 20px;
+    }
+
+    .email_btn {
+        margin: 0 0 0 60% !important;
+        display: none;
+    }
+
+    .dynamic_nav, .nav_container, .dynamic_nav_title, .dynamic_nav_titles_container {
+        display: none !important;
+        width: 100%;
+    }
+
+    .project_container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project_display {
+        width: 80%;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .project_info {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .technologies {
+        width: 100%;
+    }
+
+    #icon_wrapper {
+        width: 100%;
+    }
+
+    .tech_icon {
+        height: 25px;
+        filter:none;
+        -webkit-filter: none;
+    }
+
+    #client, #mean, #java, #python, #libraries {
+        width: 50px;
+        /* background-color: burlywood; */
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    #mean {
+        width: 50px;
+    }
+    
+    #python {
+        width: 50px;
+    }
+    
+    #libraries {
+        display: none;
+    }
+
+    #foot_wrapper {
+        text-align: center !important;
+    }
+
+    #social {
+        width: 100%;
+        height: 30%;
+        display: block;
+        margin: 20px 0 0 0;
+        /* background-color: cornflowerblue */
+    }
+
+    #social > #headshot {
+        height: 50%;
+    }
+
+    #social_contact > button {
+        width: 90%;
+        height: 35px;
+        margin-right: 20px;
+    }
+
+    #social > a > .social_link {
+        height: 35px;
+    }
+
+    #contact_form {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        vertical-align: top;
+        /* background-color: aquamarine */
+    }
+    
+
+
+}

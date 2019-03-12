@@ -120,4 +120,15 @@ $(Document).ready(function(){
         ev.preventDefault();
     });
 
+    // Email Button Scale-In Effect
+    $('.email_btn').hide()
+    if($('.email_btn').css('float') != 'left'){
+        setTimeout(function(){
+            $('.email_btn').show('scale',200)
+        },1000)
+    };
+    
+    // Title & Summary Initial Fade-In Effect
+    $('.title, .summary').hide();
+    $('.title, .summary').fadeIn(1000);
 })

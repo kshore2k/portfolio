@@ -675,8 +675,7 @@ body, html {
     }
 
     .email_btn {
-        margin: 0 0 0 60% !important;
-        display: none;
+        float: left;
     }
 
     .dynamic_nav, .nav_container, .dynamic_nav_title, .dynamic_nav_titles_container {
@@ -764,7 +763,7 @@ body, html {
     }
 
     #contact_form {
-        width: 100%;
+        width: 98%;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         vertical-align: top;

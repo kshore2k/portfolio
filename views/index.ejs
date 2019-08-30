@@ -40,45 +40,50 @@
 
        <div class="wrapper">
             
-            <div id="header">
-                <img class="enso" src="./img/enso.png" alt="ensō">
-                <div id="title_container">
-                    <h1 class="name">Kristofer Shore</h1>
-                    <br><p class="subtitle">Full Stack Developer</p>
+            <div id="header-nav">
+                <div id="header">
+                    <img class="enso" src="./img/enso.png" alt="ensō">
+                    <div id="title_container">
+                        <h1 class="name">Kristofer Shore</h1>
+                        <p class="subtitle">Full Stack Developer</p>
+                    </div>
+                </div>
+
+                <div id="navs">
+                    <div class="nav_home">
+                        <p class="nav_btn">HOME</p>
+                    </div>
+
+                    <div class="nav_projects">
+                        <p class="nav_btn">PROJECTS</p>
+                    </div>
+
+                    <div class="nav_contact">
+                        <p class="nav_btn">CONTACT</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="nav_home">
-                <p class="nav_btn">HOME</p>
-            </div>
-
-            <div class="nav_projects">
-                <p class="nav_btn">PROJECTS</p>
-            </div>
-
-            <div class="nav_contact">
-                <p class="nav_btn">CONTACT</p>
-            </div>
-
-            <h1 class="title">Full Stack Developer.
-                <p class="summary">Based out of Tacoma, Washington. Bringing a creative approach to modern web, mobile & software development.<br> 
-                    If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <span id="contact_here">here</span>.</p>
+            <div id="title-summary">
+                <h1 class="title">Full Stack Developer.</h1>
+                <p class="summary">Based out of Tacoma, Washington. Bringing a creative approach to modern web, mobile & software development.</p>
+                <p class="summary">If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me <span id="contact_here">here</span>.</p>
 
                 <button id="hire_btn">I'm looking to hire <img src="./img/arrow_right.png" alt="hire"></button>
-            </h1>
+            </div>
 
         </div>
 
     </div>
 
-    <div class="projects">
+    <a class="email_anchor" href="mailto:kshore2k18@gmail.com">
+        <div class="email_btn">
+            <img class="email_btn_icon" src="./img/mail_white.png" alt="mail">
+            <p class="email_btn_txt" >Contact Me</p>
+        </div>
+    </a>
 
-        <a class="email_anchor" href="mailto:kshore2k18@gmail.com">
-            <div class="email_btn">
-                <img class="email_btn_icon" src="./img/mail_white.png" alt="mail">
-                <p class="email_btn_txt" >Contact Me</p>
-            </div>
-        </a>
+    <div class="projects">
 
         <div class="content_wrapper">
 
@@ -108,35 +113,34 @@
             <div class="project_container">
                 <img class="project_display" src="./img/postupdisplays.png" alt="PostUp">
                 <div class="project_info">
-                    <a class="project_link" href="" target="_blank"><h1>PostUp</h1></a>
+                    <a class="project_link" href="http://18.222.142.76/dashboard" target="_blank"><h1>PostUp</h1></a>
                     <p>A hangout for go-getters. Part forum, part social networking web app geared toward sharing motivational stories and ideas. Responsive and mobile friendly. Built leveraging the MEAN full stack.</p>
                     <a class="repo_link" href="https://github.com/kshore2k/postup" target="_blank">View Codebase</a>
                 </div>
-                <img class="border_shadow" src="./img/border_shadow.png" alt="border_shadow">
             </div>
+            <img class="border_shadow" src="./img/border_shadow.png" alt="border_shadow">
 
             <div class="project_container">
                 <img class="project_display" src="./img/chatjsdisplays.png" alt="chat.js">
                 <div class="project_info">
-                    <a class="project_link" href="" target="_blank"><h1>Chat.js</h1></a>
+                    <a class="project_link" href="http://18.222.133.227/" target="_blank"><h1>Chat.js</h1></a>
                     <p>Interactive chat-room makes messaging your friends fun! Utilizing particles.js for an entertaining UI/UX & socket.io for seamless conversations. Node.js server with an Express framework.</p>
                     <a class="repo_link" href="https://github.com/kshore2k/chat.js" target="_blank">View Codebase</a>
                 </div>
-                <img class="border_shadow" src="./img/border_shadow.png" alt="border_shadow">
             </div>
+            <img class="border_shadow" src="./img/border_shadow.png" alt="border_shadow">
 
             <div class="project_container">
                 <img class="project_display" src="./img/wutsgooddisplays.png" alt="chat.js">
                 <div class="project_info">
-                    <a class="project_link" href="" target="_blank"><h1>Wuts-Gud</h1></a>
+                    <a class="project_link" href="http://18.223.235.97/" target="_blank"><h1>Wuts-Gud</h1></a>
                     <p>Positive news only. This mobile friendly web app showcases an external API powered newsfeed curated for uplifting, feel-good content. Server built in Python with a Django framework.</p>
                     <a class="repo_link" href="https://github.com/kshore2k/wuts-gud-app" target="_blank">View Codebase</a>
                 </div>
             </div>
 
             <div class="technologies">
-                <h1>Proficient Technologies</h1>
-
+                <h1>Technologies</h1>
                 <div id="icon_wrapper">
                     <div id="client">
                         <img class="tech_icon" src="./img/html5_icon.png" alt="html5">
@@ -145,9 +149,10 @@
                     </div>
 
                     <div id="mean">
-                        <img class="tech_icon" src="./img/mongodb_logo.png" alt="mongoDb">
+                        
                         <img class="tech_icon" src="./img/express_icon.png" alt="express">
                         <img class="tech_icon" src="./img/angular_icon.png" alt="angular">
+                        <img class="tech_icon" src="./img/react_icon.png" alt="react">
                         <img class="tech_icon" src="./img/node_icon.png" alt="node">
                     </div>
 
@@ -157,17 +162,14 @@
                     </div>
 
                     <div id="python">
-                        <img class="tech_icon" src="./img/python_icon.png" alt="python">
-                        <img class="tech_icon" src="./img/flask_icon.png" alt="flask">
-                        <img class="tech_icon" src="./img/django_icon.png" alt="django">
+                        <img class="tech_icon" src="./img/mongodb_logo.png" alt="mongoDb">
                         <img class="tech_icon" src="./img/mysql_icon.png" alt="mySql">
                     </div>
 
                     <div id="libraries">
+                        <img class="tech_icon" src="./img/aws_icon.png" alt="aws">
                         <img class="tech_icon" src="./img/jquery_icon.png" alt="jquery">
-                        <br>
                         <img class="tech_icon" src="./img/ajax_icon.png" alt="ajax">
-                        <img class="tech_icon" src="./img/socket.io_icon.png" alt="socket.io">
                     </div>
                 </div>
             </div>
@@ -181,14 +183,14 @@
         <div id="foot_wrapper">
 
             <div id="social">
-                <img id="headshot" src="./img/headshot.jpeg" alt="me">
+                <img id="headshot" src="http://i68.tinypic.com/j0dtmb.jpg" alt="me">
 
                 <a id="social_contact" href="mailto:kshore2k18@gmail.com">
                     <button>CONTACT ME</button>
                 </a>
 
                 <a href="https://github.com/kshore2k" target="_blank"><img class="social_link" src="./img/github_square.png" alt="github"></a>
-                <a href="https://linkedin.com/in/kristofershore" target="_blank"><img class="social_link" src="./img/linkedin_square.png" alt="linkedIn"></a>
+                <a href="https://linkedin.com/in/kris-shore" target="_blank"><img class="social_link" src="./img/linkedin_square.png" alt="linkedIn"></a>
                 <a href="mailto:kshore2k18@gmail.com"><img class="social_link" src="./img/mail_pink.png" alt="email"></a>
 
             </div>

@@ -9,16 +9,6 @@ $(Document).ready(function(){
             $(this).children().animate({color : 'white'}, 200)
         }
     );
-    
-    // Summary Contact Hover Effect
-    $('#contact_here').hover(
-        function(){
-            $(this).animate({color :'#f61f70'}, 500)
-        },
-        function(){
-            $(this).animate({color :'white'}, 0)
-        }
-    );
 
     // Contact Button Shake Effect
     $('.email_anchor').mouseenter(
@@ -55,11 +45,11 @@ $(Document).ready(function(){
 
     $('.repo_link').hover(
         function(){
-            $(this).animate({fontSize : '13px'}, 200)
+            $(this).animate({fontSize : '13px', width : '100px'}, 200)
             $(this).addClass('shadow')
         },
         function(){
-            $(this).animate({fontSize : '12px'}, 100)
+            $(this).animate({fontSize : '12px', width : '94px'}, 100)
             $(this).removeClass('shadow')
         }
     );
@@ -78,14 +68,14 @@ $(Document).ready(function(){
     });
 
     $('.nav_contact, #dynamic_nav_contact, #contact_here, #hire_btn').click(function(){
-        $('html, body').animate({scrollTop: $('.bg_image2').offset().top}, 1000);
+        $('html, body').animate({scrollTop: $('.bg_image2').offset().top - 55}, 1000);
         $('#name').focus();
     });
 
     // Reset and Add Active Class for Contact Section Nav
     var top = $('.bg_image2').offset().top;
     $(window).scroll(function(){
-        if($(window).scrollTop() > top - 60){
+        if($(window).scrollTop() > top - 65){
             $('.active').removeClass('active');
             $('#dynamic_nav_contact').addClass('active');
         }
@@ -122,11 +112,10 @@ $(Document).ready(function(){
 
     // Email Button Scale-In Effect
     $('.email_btn').hide()
-    if($('.email_btn').css('float') != 'left'){
-        setTimeout(function(){
-            $('.email_btn').show('scale',200)
-        },1000)
-    };
+    
+    setTimeout(function(){
+        $('.email_btn').show('scale',200)
+    },1000);
     
     // Title & Summary Initial Fade-In Effect
     $('.title, .summary').hide();
